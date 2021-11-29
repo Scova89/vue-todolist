@@ -22,8 +22,9 @@ const app = new Vue({
 
     methods: {
         addTodo: function(){
-            if(this.valoreInput != " "){
-                this.todos.push({text:this.valoreInput})
+            if(this.valoreInput != ""){
+                this.todos.push({text:this.valoreInput});
+                this.valoreInput='';
             }  
         }
     },
