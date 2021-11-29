@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
 .head-container{
     margin: auto;
     padding: 20px;
@@ -19,17 +24,29 @@ img{
 }
 
 h1{
-    font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-weight: 700;
     padding-top: 20px;
 }
 
 
 .list-container{
     margin: auto;
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(240, 240, 240);
     width: 70%;
     border-radius: 20px;
-    padding: 30px;
+    padding: 20px;
+    
+}
+
+
+.todos li{
+    padding: 10px 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.todos li:not(:last-child){
+    border-bottom: 1px solid rgb(175, 175, 175);
 }
