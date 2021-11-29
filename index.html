@@ -36,10 +36,17 @@
 
         <!-- main -->
         <main>
+            
+
             <div class="list-container">
+                <div class="add-todo">
+                    <input type="text" placeholder="Inserisci elemento nella lista">
+                    <button>Add</button>
+                </div>
+
                 <div class="todos">
                     <ul>
-                        <li><span></span> <i class="fas fa-times"></i></li>
+                        <li v-for="todo in todos"><span>{{todo.text}}</span> <i class="fas fa-times"></i></li>
                         
                     </ul>
                 </div>

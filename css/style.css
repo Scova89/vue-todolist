@@ -31,13 +31,20 @@ h1{
 
 .list-container{
     margin: auto;
+    
+}
+
+.add-todo{
+    text-align: center;
+}
+
+.todos{
     background-color: rgb(240, 240, 240);
     width: 70%;
     border-radius: 20px;
     padding: 20px;
-    
+    margin: auto;
 }
-
 
 .todos li{
     padding: 10px 0;
