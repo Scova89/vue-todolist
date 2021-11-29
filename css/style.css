@@ -1,0 +1,35 @@
+/* commons */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head-container{
+    margin: auto;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 100%;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+
+.list-container{
+    margin: auto;
+    background-color: rgb(207, 207, 207);
+    width: 70%;
+    border-radius: 20px;
+    padding: 30px;
+}
