@@ -13,44 +13,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- link a font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 
 <body>
 
-    
-    <!-- header -->
-    <header>
-        <div class="head-container">
-            <img src="https://www.boolean.careers/images/misc/logo.png" alt="Logo Boolean">
+    <div id="root">
+        <!-- header -->
+        <header>
+            <div class="head-container">
+                <img src="https://www.boolean.careers/images/misc/logo.png" alt="Logo Boolean">
 
-            <h1>To Do List</h1>
-        </div>
-        
-
-    </header>
-    <!-- /header -->
-
-    <!-- main -->
-    <main>
-        <div class="list-container">
-            <div class="todos">
-                <ul>
-                    <li>ffff</li>
-                    <li>ffff</li>
-                    <li>ffff</li>
-                </ul>
+                <h1>To Do List</h1>
             </div>
             
-        </div>
 
-    </main>
-    <!-- /main -->
+        </header>
+        <!-- /header -->
+
+        <!-- main -->
+        <main>
+            <div class="list-container">
+                <div class="todos">
+                    <ul>
+                        <li><span></span> <i class="fas fa-times"></i></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+
+        </main>
+        <!-- /main -->
+    </div>
+    
 
     
     
-
-
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
