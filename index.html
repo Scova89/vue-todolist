@@ -45,7 +45,9 @@
 
                 <div class="todos">
                     <ul>
-                        <li v-for="todo in todos"><span>{{todo.text}}</span> <i class="fas fa-times"></i></li>
+                        <li v-for="(todo, index) in todos">
+                            <span>{{todo.text}}</span> <i class="fas fa-times" @click="removeTodo(index)"></i>
+                        </li>
                         
                     </ul>
                 </div>

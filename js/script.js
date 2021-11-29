@@ -4,15 +4,15 @@ const app = new Vue({
         todos:[
             {
                 text: 'Portare il cane a spasso',
-                done: true,
+                done: false,
             },
             {
                 text: 'Fare la spesa',
-                done: true,
+                done: false,
             },
             {
                 text: 'Preparare la cena',
-                done: true,
+                done: false,
             },        
         ],
 
@@ -26,6 +26,10 @@ const app = new Vue({
                 this.todos.push({text:this.valoreInput});
                 this.valoreInput='';
             }  
+        },
+
+        removeTodo: function(index){
+            this.todos.splice(index);
         }
     },
 });
