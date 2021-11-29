@@ -36,6 +36,22 @@ h1{
 
 .add-todo{
     text-align: center;
+    padding: 40px;
+    
+}
+
+.add-todo input{
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.add-todo button{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: hsl(215deg 100% 10%);
+    color: white;
+    cursor: pointer;
 }
 
 .todos{

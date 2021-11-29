@@ -16,11 +16,13 @@ const app = new Vue({
             },        
         ],
 
+        valoreInput: '',
     },
 
-    
 
     methods: {
-
+        addTodo: function(){
+            this.todos.push({text:this.valoreInput})
+        }
     },
 });

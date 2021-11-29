@@ -37,11 +37,10 @@
         <!-- main -->
         <main>
             
-
             <div class="list-container">
                 <div class="add-todo">
-                    <input type="text" placeholder="Inserisci elemento nella lista">
-                    <button>Add</button>
+                    <input type="text" placeholder="Inserisci elemento nella lista" v-model="valoreInput">
+                    <button @click="addTodo">Add</button>
                 </div>
 
                 <div class="todos">
