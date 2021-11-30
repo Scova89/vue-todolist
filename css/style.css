@@ -66,8 +66,8 @@ h1{
     padding: 10px 0;
     list-style: none;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -78,8 +78,15 @@ h1{
 .todos .fa-times{
     color: grey;
     cursor: pointer;
+    
+}
+
+.todos .fa-check{
+    color: rgb(35, 192, 43);
+    cursor: pointer;
+    margin-right: 5px;
 }
 
 .sbarrato{
-    text-decoration: overline;
+    text-decoration: line-through;
 }

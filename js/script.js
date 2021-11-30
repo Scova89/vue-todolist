@@ -23,13 +23,27 @@ const app = new Vue({
     methods: {
         addTodo: function(){
             if(this.valoreInput != ""){
-                this.todos.push({text:this.valoreInput});
+                this.todos.push(
+                    {
+                        text:this.valoreInput,
+                        done: false,
+                    }
+                );
+               
                 this.valoreInput='';
             }  
         },
 
+        sbarraTodo: function(index){
+            if(this.todos[index].done == true){
+                this.todos[index].done = false
+            }else{
+                this.todos[index].done = true;
+            }
+        },
+
         removeTodo: function(index){
-            this.todos.splice(index);
+            this.todos.splice(index, 1);
         }
     },
 });

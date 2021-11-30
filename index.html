@@ -46,7 +46,7 @@
                 <div class="todos">
                     <ul>
                         <li v-for="(todo, index) in todos">
-                            <span>{{todo.text}}</span> <i class="fas fa-times" @click="removeTodo(index)"></i>
+                            <span class="testo" :class="todo.done == true ? 'sbarrato' : ''"><i class="fas fa-check" @click="sbarraTodo(index)"></i> {{todo.text}}</span> <i class="fas fa-times" @click="removeTodo(index)"></i>
                         </li>
                         
                     </ul>
